@@ -22,7 +22,7 @@ const LogoImage = styled.div `
 const LogoTitle = styled.h2 `
     color: #fff;
     font-size: ${({ size }) => size ? size + "px" : "35px" };
-    font-weight: 900;
+    font-weight: 700;
     margin: 0;
     margin-left: 6px;
 `;
