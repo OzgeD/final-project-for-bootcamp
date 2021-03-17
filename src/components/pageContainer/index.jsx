@@ -23,6 +23,6 @@ export const InnerPageContainer = styled.div`
   flex-direction: column;
   max-width: ${({ maxWidth }) => (maxWidth ? maxWidth : "auto")};
   min-height: 70vh;
-  padding: 1em;
+  //padding: 1em;
   width: 100%;
 `;
