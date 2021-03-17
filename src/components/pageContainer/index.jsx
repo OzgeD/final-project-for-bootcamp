@@ -2,13 +2,14 @@ import React from "react";
 import styled from "styled-components";
 
 const PageWrapper = styled.div`
-  width: 100%;
-  min-height: 100%;
-  padding: 0;
-  margin: 0;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 0;
+  min-height: 100%;
+  padding: 0;
+  width: 100%;
+
 `;
 
 export function PageContainer(props) {
@@ -16,13 +17,12 @@ export function PageContainer(props) {
 }
 
 export const InnerPageContainer = styled.div`
-  flex: 1;
-  width: 100%;
-  max-width: ${({ maxWidth }) => (maxWidth ? maxWidth : "auto")};
-  /*min-height Need more testing*/
-  min-height: 70vh;
-  //padding: 1em;
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  max-width: ${({ maxWidth }) => (maxWidth ? maxWidth : "auto")};
+  min-height: 70vh;
+  padding: 1em;
+  width: 100%;
 `;
