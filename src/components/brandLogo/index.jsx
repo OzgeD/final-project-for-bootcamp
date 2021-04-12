@@ -20,22 +20,22 @@ const LogoImage = styled.div `
 `;
 
 const LogoTitle = styled.h2 `
-    color: #fff;
+    color: ${({ color }) => color ? color : "#fff" };
     font-size: ${({ size }) => size ? size + "px" : "20px" };
-    font-weight: 700;
+    font-weight: 900;
     margin: 0;
     margin-left: 6px;
 `;
 
 export function BrandLogo(props) {
-    const { logoSize, textSize } = props;
+    const { logoSize, textSize, color, hideLogo } = props;
 
     return (  
         <BrandLogoContainer>
-            <LogoImage size= {logoSize}>
+            {!hideLogo && <LogoImage size= {logoSize}>
                 <img src={LogoImg} alt="Servycing Logo" />
-            </LogoImage>
-            <LogoTitle size= {textSize}>Servycing</LogoTitle>
+            </LogoImage>}
+            <LogoTitle size= {textSize} color={color} >Servycing</LogoTitle>
         </BrandLogoContainer>
     );
   

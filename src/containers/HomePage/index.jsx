@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Footer } from "../../components/footer";
 import { Marginer } from "../../components/marginer";
 import { Navbar } from "../../components/navbar";
 import { InnerPageContainer, PageContainer } from "../../components/pageContainer";
@@ -31,7 +32,9 @@ export function HomePage(props) {
                 </ContentContainer>
                 <Marginer direction="vertical" margin="5em" />
                 <SpecialistAd />
+                <Marginer direction="vertical" margin="5em" />
             </InnerPageContainer>
+            <Footer />
         </PageContainer>
     );
 }
